@@ -47,9 +47,10 @@ let chemical_plant_ = maker "Chemical Plant" 1.25
 (* Shorthands for some commonly-used lists of makers. *)
 
 let drill = [ burner_mining_drill; electric_mining_drill ]
-let am1 = [ assembling_machine_1; assembling_machine_2; assembling_machine_3; assembling_machine_P ]
-let am2 = [ assembling_machine_2; assembling_machine_3; assembling_machine_P ]
-let am3 = [ assembling_machine_3; assembling_machine_P ]
+let am1 = [ assembling_machine_1; assembling_machine_2; assembling_machine_3; ]
+let am2 = [ assembling_machine_2; assembling_machine_3; ]
+let am3 = [ assembling_machine_3; ]
+let amP = [ assembling_machine_P; ]
 let furnace = [ stone_furnace; steel_furnace; electric_furnace ]
 let chemical_plant = [ chemical_plant_ ]
 
@@ -497,10 +498,10 @@ let steam_engine =
   res "Steam Engine" am2 0.5
     [ 8., iron_gear_wheel; 5., pipe; 10., iron_plate ]
 let solar_panel =
-  res "Solar Panel" am2 10.
+  res "Solar Panel" amP 10.
     [ 5., steel_plate; 15., electronic_circuit; 5., copper_plate ]
 let basic_accumulator =
-  res "Basic Accumulator" am1 10.
+  res "Basic Accumulator" amP 10.
     [ 2., iron_plate; 5., battery ]
 let lamp =
   res "Lamp" am2 0.5
