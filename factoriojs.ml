@@ -147,6 +147,7 @@ let special_hrefs =
       assembling_machine_1.name, "Assembling_machine";
       assembling_machine_2.name, "Assembling_machine_2";
       assembling_machine_3.name, "Assembling_machine_3";
+      assembling_machine_P.name, "Assembling_machine_NOPROD";
       underground_belt.name, "Underground_belt";
       fast_underground_belt.name, "Fast_underground_belt";
       express_underground_belt.name, "Express_underground_belt";
