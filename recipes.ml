@@ -35,9 +35,10 @@ open Factorio
 
 let burner_mining_drill = maker "Burner Mining Drill" 0.7
 let electric_mining_drill = maker "Electric Mining Drill" 1.
-let assembling_machine_1 = maker "Assembling Machine 1" 0.5
+let assembling_machine_1 = maker "Assembling Machine 1" 1.25
 let assembling_machine_2 = maker "Assembling Machine 2" 0.75
 let assembling_machine_3 = maker "Assembling Machine 3" 1.25
+let assembling_machine_P = maker "Assembling Machine PROD" 1.25
 let stone_furnace = maker "Stone Furnace" 1.
 let steel_furnace = maker "Steel Furnace" 2.
 let electric_furnace = maker "Electric Furnace" 2.
@@ -46,9 +47,9 @@ let chemical_plant_ = maker "Chemical Plant" 1.25
 (* Shorthands for some commonly-used lists of makers. *)
 
 let drill = [ burner_mining_drill; electric_mining_drill ]
-let am1 = [ assembling_machine_1; assembling_machine_2; assembling_machine_3 ]
-let am2 = [ assembling_machine_2; assembling_machine_3 ]
-let am3 = [ assembling_machine_3 ]
+let am1 = [ assembling_machine_1; assembling_machine_2; assembling_machine_3; assembling_machine_P ]
+let am2 = [ assembling_machine_2; assembling_machine_3; assembling_machine_P ]
+let am3 = [ assembling_machine_3; assembling_machine_P ]
 let furnace = [ stone_furnace; steel_furnace; electric_furnace ]
 let chemical_plant = [ chemical_plant_ ]
 
